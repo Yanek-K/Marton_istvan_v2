@@ -1,0 +1,100 @@
+@media only screen and (min-width: 450px) {
+  .page-wrap {
+    width: 7px;
+    display: flex;
+
+    .buttonsPrev {
+      position: absolute;
+      top: 50%;
+      left: 3.6%;
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    .buttonsNext {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 91%;
+      font-size: 32px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 14.6%;
+      // top: 50%;
+    }
+    .buttonsNext {
+      left: 83%;
+      top: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 20.6%;
+      // top: 50%;
+    }
+    .buttonsNext {
+      left: 77%;
+      top: 50%;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 25.6%;
+      // top: 50%;
+    }
+    .buttonsNext {
+      left: 72%;
+      top: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 28.6%;
+      // top: 50%;
+    }
+    .buttonsNext {
+      left: 70%;
+      top: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 32.6%;
+      // top: 50%;
+    }
+    .buttonsNext {
+      left: 66%;
+      top: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 33.6%;
+      // top: 50%;
+    }
+    .buttonsNext {
+      left: 65%;
+      top: 50%;
+    }
+  }
+}

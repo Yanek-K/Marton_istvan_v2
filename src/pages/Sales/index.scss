@@ -1,0 +1,51 @@
+.sales {
+  height: auto;
+  font-family: "Lato", serif;
+
+  .sales_wrap {
+    margin: 8rem auto 6rem;
+    width: 40rem;
+    p {
+      font-size: 1.5rem;
+      line-height: 4rem;
+      letter-spacing: 0.15rem;
+      word-spacing: 0.05rem;
+    }
+  }
+  .sales_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 10rem;
+    color: white;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.1rem;
+
+    .sales_contact_header {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .sales {
+    .sales_wrap {
+      width: 60rem;
+      margin: 10rem auto 6rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .sales {
+    .sales_wrap {
+      width: 90rem;
+    }
+  }
+}

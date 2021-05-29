@@ -1,0 +1,39 @@
+.shop_wrap {
+  display: flex;
+  max-width: 1000px;
+  margin: 6rem auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2rem 0rem;
+    text-align: center;
+    li {
+      list-style-type: none;
+      margin: 1rem 1.6rem;
+    }
+  }
+
+  .shop_img {
+    width: 130px;
+    height: auto;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  }
+
+  .shop_name {
+    width: 160px;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+    line-height: 1.8rem;
+    margin-bottom: -0.3rem;
+  }
+  .shop_price {
+    font-size: 1.4rem;
+  }
+}

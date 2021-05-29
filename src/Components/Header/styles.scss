@@ -1,0 +1,59 @@
+.header {
+  height: 16rem;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 1.2rem;
+    padding-top: 2rem;
+  }
+
+  h1 {
+    font-family: "Pinyon Script", cursive;
+    font-size: 5.5rem;
+    letter-spacing: 0.4rem;
+    font-weight: 100;
+  }
+
+  h3 {
+    font-weight: 300 !important;
+    letter-spacing: 0.8rem;
+    font-size: 1.5rem;
+    margin-top: -2.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  nav {
+    color: white;
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      background-color: #db6816;
+      padding: 1rem;
+      align-items: center;
+      height: 2.5rem;
+      opacity: 90%;
+
+      li {
+        font-weight: 400;
+        font-size: 1.45rem;
+        transition: all 0.5s ease;
+
+        .nav {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .nav:hover {
+        color: black;
+      }
+    }
+  }
+}

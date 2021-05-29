@@ -1,0 +1,75 @@
+.homepage {
+  font-family: cursive;
+  height: 60vh;
+
+  .homepage_wrap {
+    text-align: center;
+    margin: 7rem auto;
+    width: 40rem;
+    p {
+      font-size: 2rem;
+      font-family: "Bodoni Moda", serif;
+      line-height: 5rem;
+      letter-spacing: 0.2rem;
+      word-spacing: 0.1rem;
+    }
+
+    .homepage_button {
+      width: 60%;
+      margin: auto;
+
+      button {
+        background-color: black;
+        color: white;
+        margin: 4rem;
+        padding: 0rem 3rem;
+        border: 1px solid white;
+        font-size: 1.45rem;
+        font-family: "Bodoni Moda", serif;
+        line-height: 4rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.1rem;
+      }
+
+      button:hover {
+        background-color: #605e5e;
+        border: 1px solid #605e5e;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .homepage {
+    .homepage_wrap {
+      width: 60rem;
+      margin: 10rem auto 12rem;
+
+      .homepage_button {
+        width: 60%;
+        margin: auto;
+
+        button {
+          margin: 6rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .homepage {
+    .homepage_wrap {
+      width: 80rem;
+
+      .homepage_button {
+        width: 40%;
+
+        button {
+          margin: 8rem;
+        }
+      }
+    }
+  }
+}

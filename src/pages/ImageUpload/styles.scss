@@ -1,0 +1,54 @@
+.imageUpload {
+  margin: 10rem auto;
+  width: 100%;
+  // max-width: 1500px;
+
+  .form {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto 50px;
+    text-align: center;
+    background-color: #db6816;
+    border-radius: 20px;
+    input {
+      margin: 5px;
+      border-radius: 20px;
+      padding: 5px 5px;
+    }
+    button {
+      margin: 5px;
+      border-radius: 20px;
+      padding: 5px;
+    }
+  }
+  .images {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    .image {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 10px;
+      text-align: center;
+
+      li {
+        list-style-type: none;
+        font-size: 1.5rem;
+      }
+
+      img {
+        width: 170px;
+        height: auto;
+
+        padding: 10px 20px;
+        image-rendering: -moz-crisp-edges; /* Firefox */
+        image-rendering: -o-crisp-edges; /* Opera */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+      }
+    }
+  }
+}

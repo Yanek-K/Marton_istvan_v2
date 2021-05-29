@@ -1,0 +1,51 @@
+.the_series {
+  height: auto;
+
+  .the_series_wrap {
+    margin: 8rem auto 6rem;
+    width: 40rem;
+
+    h1 {
+      font-family: "Bodoni Moda", serif;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 4rem;
+      letter-spacing: 0.15rem;
+      word-spacing: 0.05rem;
+      margin-bottom: 5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.15rem;
+      word-spacing: 0.05rem;
+      float: none;
+      margin-bottom: 4rem;
+    }
+    h3 {
+      font-family: "Pinyon Script", cursive;
+      text-align: right;
+      font-size: 2.5rem;
+      line-height: 4rem;
+      letter-spacing: 0.15rem;
+      word-spacing: 0.05rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .the_series {
+    .the_series_wrap {
+      width: 60rem;
+      margin: 10rem auto 6rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .the_series {
+    .the_series_wrap {
+      width: 90rem;
+    }
+  }
+}

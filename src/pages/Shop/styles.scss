@@ -3,6 +3,11 @@
   max-width: 1000px;
   margin: 6rem auto;
 
+  .loading_spinner {
+    height: 400px;
+    margin: 10rem auto;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;

@@ -17,6 +17,7 @@ const ProductCard = () => {
   const { product } = useSelector(mapState);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     dispatch(fetchDetails(productId));
 
     return () => {
@@ -37,7 +38,7 @@ const ProductCard = () => {
             )}
             {product && <p>C${product.imagePrice}</p>}
 
-            <p className="product_details_quantity">Quantity</p>
+            <p className="product_details_quantity">Quantity: 1</p>
             <btn className="products_details_button">Add To Cart</btn>
             <div className="product_details_text">
               <h4>Description:</h4>

@@ -1,11 +1,10 @@
 import React from "react";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 const Card = ({ img, name }) => {
   return (
     <div styles={styles.card}>
       <div style={styles.card_wrapper}>
-        <img src={img} style={styles.image} />
+        <img src={img} alt="Gallery Images" style={styles.image} />
       </div>
       <p style={styles.name}>{name}</p>
     </div>
@@ -13,10 +12,6 @@ const Card = ({ img, name }) => {
 };
 
 const styles = {
-  // card: {
-  //   height: "626px",
-  //   textAlign: "center",
-  // },
   card_wrapper: {
     width: "433px",
     height: "586px",

@@ -15,7 +15,7 @@ const Gallery = () => {
   useEffect(() => {
     dispatch(fetchImages());
     dispatch(fetchDetails());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="gallery-wrap">

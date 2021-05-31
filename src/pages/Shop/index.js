@@ -14,7 +14,7 @@ const Shop = () => {
 
   useEffect(() => {
     dispatch(fetchImages());
-  }, []);
+  }, [dispatch]);
 
   console.log(images);
   return (

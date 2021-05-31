@@ -1,4 +1,7 @@
 import {
+  FETCH_DETAILS_FAILURE,
+  FETCH_DETAILS_REQUEST,
+  FETCH_DETAILS_SUCCESS,
   FETCH_PRODUCTS_FAILURE,
   FETCH_PRODUCTS_REQUEST,
   FETCH_PRODUCTS_SUCCESS,
@@ -6,7 +9,7 @@ import {
 
 const INITIAL_STATE = {
   products: [],
-  product: {},
+  product: [],
   loading: false,
 };
 
@@ -28,6 +31,23 @@ const productsReducer = (state = INITIAL_STATE, action) => {
         ...state,
         loading: false,
         products: [],
+      };
+    case FETCH_DETAILS_SUCCESS:
+      return {
+        ...state,
+        product: action.payload,
+        loading: false,
+      };
+    case FETCH_DETAILS_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
+    case FETCH_DETAILS_FAILURE:
+      return {
+        ...state,
+        loading: false,
+        product: [],
       };
     default:
       return state;

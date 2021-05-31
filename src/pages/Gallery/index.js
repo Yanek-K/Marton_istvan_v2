@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./styles.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchImages } from "./../../redux/Images/images.actions";
+import { fetchImages, fetchDetails } from "./../../redux/Images/images.actions";
 import Carousel from "./Carousel";
 
 const mapState = ({ imagesData }) => ({
@@ -14,6 +14,7 @@ const Gallery = () => {
 
   useEffect(() => {
     dispatch(fetchImages());
+    dispatch(fetchDetails());
   }, []);
 
   return (

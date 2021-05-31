@@ -16,6 +16,7 @@ import The_Series from "./pages/The_Series";
 import Technical_Info from "./pages/Technical_Info";
 import Footer from "./Components/Footer";
 import ImageUpload from "./pages/ImageUpload";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path="/the_series" component={The_Series} />
       <Route path="/technical_info" component={Technical_Info} />
       <Route path="/image_upload" component={ImageUpload} />
+      <Route path="/product_details/:productId" component={ProductDetails} />
       <Footer />
     </div>
   );

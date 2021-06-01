@@ -62,7 +62,7 @@ const Header = (props) => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="nav">
+            <Link to="/cart" className="nav">
               Cart ({totalNumCartItems})
             </Link>
           </li>

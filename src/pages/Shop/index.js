@@ -18,7 +18,6 @@ const Shop = () => {
     dispatch(fetchImages());
   }, [dispatchEvent]);
 
-  console.log(images);
   return (
     <div className="shop_wrap">
       {images.length === 0 ? (

@@ -17,6 +17,7 @@ import Technical_Info from "./pages/Technical_Info";
 import Footer from "./Components/Footer";
 import ImageUpload from "./pages/ImageUpload";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
       <Route path="/the_szünets" component={The_Szunets} />
       <Route path="/the_series" component={The_Series} />
       <Route path="/technical_info" component={Technical_Info} />
-      <Route path="/image_upload" component={ImageUpload} />
+      {/* <Route path="/image_upload" component={ImageUpload} /> */}
       <Route path="/product_details/:productId" component={ProductDetails} />
+      <Route path="/cart" component={Cart} />
       <Footer />
     </div>
   );

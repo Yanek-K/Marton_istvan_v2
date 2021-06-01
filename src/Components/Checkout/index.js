@@ -1,0 +1,67 @@
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+
+import "./styles.scss";
+
+const mapState = (state) => ({
+  cartItems: state.cartData.cartItems,
+});
+
+const Checkout = () => {
+  const { cartItems } = useSelector(mapState);
+
+  // console.log(cartItems[0].imageUrl);
+  return (
+    <div className="checkout">
+      {cartItems.length === 0 ? (
+        <div className="checkout_empty">
+          <h3>
+            Your Cart is Empty <br /> Head back to the shop to browse our
+            collections
+          </h3>
+          <Link to="/shop">
+            <btn className="checkout_empyt_btn">Back to Shop</btn>
+          </Link>
+        </div>
+      ) : (
+        <div className="checkout_wrap">
+          <div className="checkout_products">
+            <div className="checkout_products_header">
+              <h4>My Cart</h4>
+              <p>Continue Shopping</p>
+            </div>
+            <hr />
+            <div className="checkout_products_product">
+              <ul>
+                {cartItems.map((cartItem) => (
+                  <li>
+                    <div className="checkout_products_product_left">
+                      <img src={cartItem.imageUrl} alt="Cart Items" />
+                      <div className="checkout_products_product_details">
+                        <p className="checkout_products_product_details_name">
+                          {cartItem.imageName}
+                        </p>
+                        <p className="checkout_products_product_details_price">
+                          C${cartItem.imagePrice}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="checkout_products_product_right">
+                      <p>-</p>
+                      <p>{cartItem.quantity}</p>
+                      <p>+</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Checkout;

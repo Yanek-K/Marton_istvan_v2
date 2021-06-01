@@ -10,8 +10,8 @@ const mapState = (state) => ({
 
 const Checkout = () => {
   const { cartItems } = useSelector(mapState);
+  let price;
 
-  // console.log(cartItems[0].imageUrl);
   return (
     <div className="checkout">
       {cartItems.length === 0 ? (
@@ -29,7 +29,7 @@ const Checkout = () => {
           <div className="checkout_products">
             <div className="checkout_products_header">
               <h4>My Cart</h4>
-              <p>Continue Shopping</p>
+              <p>Continue Shopping ></p>
             </div>
             <hr />
             <div className="checkout_products_product">
@@ -49,9 +49,20 @@ const Checkout = () => {
                     </div>
 
                     <div className="checkout_products_product_right">
-                      <p>-</p>
-                      <p>{cartItem.quantity}</p>
-                      <p>+</p>
+                      <div className="checkout_products_product_right_quantity">
+                        <p>-</p>
+                        <p>{cartItem.quantity}</p>
+                        <p>+</p>
+                      </div>
+
+                      <p className="price">
+                        C$
+                        {(price = cartItem.quantity * 3850)
+                          .toString()
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        .00
+                      </p>
+                      <p className="delete">X</p>
                     </div>
                   </li>
                 ))}

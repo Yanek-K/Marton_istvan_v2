@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import { fetchDetails } from "./../../redux/Images/images.actions";
+import { addProduct } from "./../../redux/Cart/cart.actions";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import "./styles.scss";
@@ -16,6 +17,12 @@ const ProductCard = () => {
   const { productId } = useParams();
   const { product } = useSelector(mapState);
 
+  const handleAddToCart = (product) => {
+    if (!product) return;
+    dispatch(addProduct(product));
+  };
+
+  // Get the single image from state and scroll to top
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(fetchDetails(productId));
@@ -39,7 +46,12 @@ const ProductCard = () => {
             {product && <p>C${product.imagePrice}</p>}
 
             <p className="product_details_quantity">Quantity: 1</p>
-            <btn className="products_details_button">Add To Cart</btn>
+            <btn
+              className="products_details_button"
+              onClick={() => handleAddToCart(product)}
+            >
+              Add To Cart
+            </btn>
             <div className="product_details_text">
               <h4>Description:</h4>
               <p>

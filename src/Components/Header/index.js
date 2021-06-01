@@ -2,7 +2,17 @@ import React from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
 
+import { selectCartItemsCount } from "./../../redux/Cart/cart.selectors";
+import { useSelector, useDispatch } from "react-redux";
+
+const mapState = (state) => ({
+  totalNumCartItems: selectCartItemsCount(state),
+});
+
 const Header = (props) => {
+  const dispatch = useDispatch();
+  const { totalNumCartItems } = useSelector(mapState);
+
   return (
     <header className="header">
       <div className="logo">
@@ -31,7 +41,6 @@ const Header = (props) => {
               Shop
             </Link>
           </li>
-
           <li>
             <Link to="/the_artist" className="nav">
               The Artist
@@ -50,6 +59,11 @@ const Header = (props) => {
           <li>
             <Link to="/technical_info" className="nav">
               Technical Info
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="nav">
+              Cart ({totalNumCartItems})
             </Link>
           </li>
         </ul>

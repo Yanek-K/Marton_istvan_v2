@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./styles.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchImages, fetchDetails } from "./../../redux/Images/images.actions";
-import Carousel from "./Carousel";
+import Carousel from "./../../Components/Carousel";
 
 const mapState = ({ imagesData }) => ({
   images: imagesData.products,

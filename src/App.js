@@ -13,7 +13,6 @@ import Shop from "./pages/Shop";
 import The_Artist from "./pages/The_Artist";
 import The_Szunets from "./pages/The_Szunets";
 import The_Series from "./pages/The_Series";
-import Technical_Info from "./pages/Technical_Info";
 import Footer from "./Components/Footer";
 import ImageUpload from "./pages/ImageUpload";
 import ProductDetails from "./pages/ProductDetails";
@@ -30,7 +29,6 @@ function App() {
       <Route path="/the_artist" component={The_Artist} />
       <Route path="/the_szünets" component={The_Szunets} />
       <Route path="/the_series" component={The_Series} />
-      <Route path="/technical_info" component={Technical_Info} />
       {/* <Route path="/image_upload" component={ImageUpload} /> */}
       <Route path="/product_details/:productId" component={ProductDetails} />
       <Route path="/cart" component={Cart} />

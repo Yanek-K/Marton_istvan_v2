@@ -1,10 +1,17 @@
 import React from "react";
-import Checkout from "../../Components/Checkout";
+import "./styles.scss";
+import CartTotal from "../../Components/CartTotal";
+import CartItems from "../../Components/CartItems";
 
 const Cart = () => {
   return (
-    <div>
-      <Checkout />
+    <div className="cart">
+      <div className="cart_cartItems">
+        <CartItems />
+      </div>
+      <div className="cart_cartTotal">
+        <CartTotal />
+      </div>
     </div>
   );
 };

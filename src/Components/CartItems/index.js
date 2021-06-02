@@ -8,7 +8,7 @@ const mapState = (state) => ({
   cartItems: state.cartData.cartItems,
 });
 
-const Checkout = () => {
+const CartItems = () => {
   const { cartItems } = useSelector(mapState);
   let price;
 
@@ -29,7 +29,7 @@ const Checkout = () => {
           <div className="checkout_products">
             <div className="checkout_products_header">
               <h4>My Cart</h4>
-              <p>Continue Shopping ></p>
+              <p>Continue Shopping</p>
             </div>
             <hr />
             <div className="checkout_products_product">
@@ -75,4 +75,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default CartItems;

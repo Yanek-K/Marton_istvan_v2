@@ -90,6 +90,13 @@
                 border: 1px solid white;
                 height: 25px;
                 width: 80px;
+                cursor: pointer;
+              }
+
+              span {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                font-size: 1.4rem;
               }
 
               p {
@@ -109,6 +116,7 @@
                 margin-left: 2rem;
                 font-size: 1.6rem;
                 color: gray;
+                cursor: pointer;
               }
             }
           }

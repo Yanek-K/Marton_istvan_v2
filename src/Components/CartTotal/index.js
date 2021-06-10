@@ -1,8 +1,20 @@
 import React from "react";
 import "./styles.scss";
+import { createStructuredSelector } from "reselect";
+import { useSelector } from "react-redux";
 import lock from "./../../Assets/lock.png";
 
+// Redux
+import { selectCartTotal } from "./../../redux/Cart/cart.selectors";
+import { removeCartItem, addProduct } from "./../../redux/Cart/cart.actions";
+
+const mapState = createStructuredSelector({
+  total: selectCartTotal,
+});
+
 const CartTotal = () => {
+  const { total } = useSelector(mapState);
+
   return (
     <div className="cart_wrap">
       <div className="cart_summary">
@@ -13,7 +25,7 @@ const CartTotal = () => {
       <div className="cart_main">
         <div className="cart_subtotal">
           <p>Subtotal</p>
-          <p>$7,500</p>
+          <p>${total}</p>
         </div>
         <div className="cart_shipping">
           <p>Shipping</p>

@@ -1,16 +1,38 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
+
+// Redux
+import {
+  removeCartItem,
+  reduceCartItem,
+  addProduct,
+} from "./../../redux/Cart/cart.actions";
+import { handleRemoveCartItem } from "../../redux/Cart/cart.utils";
 
 const mapState = (state) => ({
   cartItems: state.cartData.cartItems,
 });
 
 const CartItems = () => {
+  const dispatch = useDispatch();
   const { cartItems } = useSelector(mapState);
+
   let price;
+
+  const handleAddProduct = (product) => {
+    dispatch(addProduct(product));
+  };
+
+  const handleReduceItem = (product) => {
+    dispatch(reduceCartItem(product));
+  };
+
+  const handleRemoveCartItem = (product) => {
+    dispatch(removeCartItem(product));
+  };
 
   return (
     <div className="checkout">
@@ -50,9 +72,13 @@ const CartItems = () => {
 
                     <div className="checkout_products_product_right">
                       <div className="checkout_products_product_right_quantity">
-                        <p>-</p>
+                        <span onClick={() => handleReduceItem(cartItem)}>
+                          -
+                        </span>
                         <p>{cartItem.quantity}</p>
-                        <p>+</p>
+                        <span onClick={() => handleAddProduct(cartItem)}>
+                          +
+                        </span>
                       </div>
 
                       <p className="price">
@@ -62,7 +88,12 @@ const CartItems = () => {
                           .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                         .00
                       </p>
-                      <p className="delete">X</p>
+                      <p
+                        className="delete"
+                        onClick={() => handleRemoveCartItem(cartItem)}
+                      >
+                        X
+                      </p>
                     </div>
                   </li>
                 ))}

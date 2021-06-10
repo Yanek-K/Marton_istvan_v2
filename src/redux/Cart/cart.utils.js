@@ -28,3 +28,30 @@ export const handleAddToCart = ({ prevCartItems, nextCartItem }) => {
     },
   ];
 };
+
+export const handleRemoveCartItem = ({ prevCartItems, cartItemToRemove }) => {
+  return prevCartItems.filter(
+    (item) => item.imageName !== cartItemToRemove.imageName
+  );
+};
+
+export const handleReduceCartItem = ({ prevCartItems, cartItemToReduce }) => {
+  const existingCartItem = prevCartItems.find(
+    (cartItem) => cartItem.imageName === cartItemToReduce.imageName
+  );
+
+  if (existingCartItem.quantity === 1) {
+    return prevCartItems.filter(
+      (cartItem) => cartItem.imageName !== existingCartItem.imageName
+    );
+  }
+
+  return prevCartItems.map((cartItem) =>
+    cartItem.imageName === existingCartItem.imageName
+      ? {
+          ...cartItem,
+          quantity: cartItem.quantity - 1,
+        }
+      : cartItem
+  );
+};

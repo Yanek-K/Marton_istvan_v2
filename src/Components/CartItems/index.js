@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
+import ssl from "./../../Assets/ssl.png";
 
 // Redux
 import {
@@ -98,6 +99,7 @@ const CartItems = () => {
                   </li>
                 ))}
               </ul>
+              <img src={ssl} alt="ssl-certificate" className="checkout_ssl" />
             </div>
           </div>
         </div>

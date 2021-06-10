@@ -122,6 +122,11 @@
           }
         }
       }
+      .checkout_ssl {
+        height: 60px;
+        width: auto;
+        margin-top: 1rem;
+      }
     }
   }
 }
@@ -176,6 +181,9 @@
               .checkout_products_product_right {
               }
             }
+          }
+          .checkout_ssl {
+            margin-top: 10rem;
           }
         }
       }

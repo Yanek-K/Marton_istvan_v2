@@ -65,6 +65,35 @@
       border-radius: 0.6rem;
       margin-bottom: 0.7rem;
     }
+
+    .checkout_stripe {
+      p {
+        text-align: center;
+      }
+      img {
+        height: 15px;
+        width: 12px;
+        left: -10px;
+        position: relative;
+        image-rendering: -moz-crisp-edges; /* Firefox */
+        image-rendering: -o-crisp-edges; /* Opera */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+        // margin-right: 1rem;
+      }
+    }
+    .checkout_paypal {
+      .checkout_paypal_pay {
+        margin-left: 0.2rem;
+        font-weight: bold;
+        color: #012169;
+      }
+      .checkout_paypal_pal {
+        font-weight: bold;
+        color: #009cde;
+      }
+    }
   }
 }
 

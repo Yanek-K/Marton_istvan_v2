@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import "./default.scss";
 
 //Components
-import Header from "./Components/Header";
+import Header from "./components/Header";
 
 // Pages
 import Homepage from "./pages/Homepage";
@@ -13,7 +13,7 @@ import Shop from "./pages/Shop";
 import The_Artist from "./pages/The_Artist";
 import The_Szunets from "./pages/The_Szunets";
 import The_Series from "./pages/The_Series";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import ImageUpload from "./pages/ImageUpload";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";

@@ -27,10 +27,12 @@
         h4 {
           font-weight: 300;
         }
-        p {
+        .checkout_back {
           font-weight: 300;
           font-size: 1.4rem;
           margin: 0;
+          color: white;
+          cursor: pointer;
         }
       }
 
@@ -53,12 +55,13 @@
               img {
                 width: 100px;
                 height: auto;
+
+                margin-bottom: 3rem;
                 image-rendering: -moz-crisp-edges; /* Firefox */
                 image-rendering: -o-crisp-edges; /* Opera */
                 image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
                 image-rendering: crisp-edges;
                 -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
-                margin-bottom: 3rem;
               }
               .checkout_products_product_details {
                 width: 50%;
@@ -90,13 +93,13 @@
                 border: 1px solid white;
                 height: 25px;
                 width: 80px;
-                cursor: pointer;
               }
 
               span {
                 margin-left: 1rem;
                 margin-right: 1rem;
                 font-size: 1.4rem;
+                cursor: pointer;
               }
 
               p {
@@ -123,9 +126,14 @@
         }
       }
       .checkout_ssl {
-        height: 60px;
+        height: 50px;
         width: auto;
         margin-top: 1rem;
+        image-rendering: -moz-crisp-edges; /* Firefox */
+        image-rendering: -o-crisp-edges; /* Opera */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
       }
     }
   }
@@ -183,7 +191,8 @@
             }
           }
           .checkout_ssl {
-            margin-top: 10rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
           }
         }
       }

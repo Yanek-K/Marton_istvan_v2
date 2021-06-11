@@ -52,7 +52,9 @@ const CartItems = () => {
           <div className="checkout_products">
             <div className="checkout_products_header">
               <h4>My Cart</h4>
-              <p>Continue Shopping</p>
+              <Link to="./shop">
+                <p className="checkout_back">Continue Shopping</p>
+              </Link>
             </div>
             <hr />
             <div className="checkout_products_product">

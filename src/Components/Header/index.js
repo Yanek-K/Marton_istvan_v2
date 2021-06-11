@@ -9,14 +9,13 @@ const mapState = (state) => ({
   totalNumCartItems: selectCartItemsCount(state),
 });
 
-const Header = (props) => {
-  const dispatch = useDispatch();
+const Header = () => {
   const { totalNumCartItems } = useSelector(mapState);
 
   return (
     <header className="header">
       <div className="logo">
-        <h1>Marton Istvan</h1>
+        <h1>Márton István</h1>
         <h3>FINE ART - TORONTO</h3>
       </div>
       <nav>

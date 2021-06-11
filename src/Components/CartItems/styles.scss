@@ -3,6 +3,19 @@
   margin: 2rem auto;
   width: 100%;
 
+  .checkout_empty {
+    text-align: center;
+    margin-top: 5%;
+    line-height: 3rem;
+    font-family: "Raleway";
+    width: 90%;
+
+    .checkout_empty_btn {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
   .checkout_wrap {
     width: 100%;
     display: flex;
@@ -179,6 +192,9 @@
 }
 @media only screen and (min-width: 960px) {
   .checkout {
+    .checkout_empty {
+      margin-top: 20%;
+    }
     .checkout_wrap {
       max-width: 100%;
       .checkout_products {

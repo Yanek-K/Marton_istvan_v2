@@ -64,15 +64,21 @@ const CartTotal = () => {
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
           className="checkout_modal"
+          style={{
+            top: "30%",
+          }}
         >
           <div>
             <h2 id="simple-modal-title">
               {" "}
-              We are not able to accept payments yet.
+              We are not able to accept online payments
             </h2>
             <p id="simple-modal-description">
-              Please send us an email to speak to us about your order.
+              Please contact us to complete your purchase.{" "}
             </p>
+            <btn className="checkout_modal_btn" onClick={handleClose}>
+              Got It
+            </btn>
           </div>
         </Modal>
       </div>

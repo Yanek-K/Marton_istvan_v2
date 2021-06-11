@@ -40,11 +40,10 @@ const CartItems = () => {
       {cartItems.length === 0 ? (
         <div className="checkout_empty">
           <h3>
-            Your Cart is Empty <br /> Head back to the shop to browse our
-            collections
+            Your Cart is Empty <br />
           </h3>
           <Link to="/shop">
-            <btn className="checkout_empyt_btn">Back to Shop</btn>
+            <btn className="checkout_empty_btn">Back to Shop</btn>
           </Link>
         </div>
       ) : (

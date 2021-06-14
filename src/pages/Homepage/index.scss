@@ -1,6 +1,6 @@
 .homepage {
   font-family: cursive;
-  height: 60vh;
+  height: 55vh;
 
   .homepage_wrap {
     text-align: center;
@@ -12,17 +12,18 @@
       line-height: 5rem;
       letter-spacing: 0.2rem;
       word-spacing: 0.1rem;
+      margin-bottom: 6rem;
     }
 
     .homepage_button {
       width: 60%;
       margin: auto;
 
-      button {
+      .homepage_button_button {
         background-color: black;
         color: white;
         margin: 4rem;
-        padding: 0rem 3rem;
+        padding: 1rem 3rem;
         border: 1px solid white;
         font-size: 1.45rem;
         font-family: "Bodoni Moda", serif;
@@ -31,7 +32,7 @@
         word-spacing: 0.1rem;
       }
 
-      button:hover {
+      .homepage_button_button:hover {
         background-color: #605e5e;
         border: 1px solid #605e5e;
         transition: all 0.5s ease;
@@ -44,13 +45,13 @@
   .homepage {
     .homepage_wrap {
       width: 60rem;
-      margin: 10rem auto 12rem;
+      margin: 10rem auto 8rem;
 
       .homepage_button {
         width: 60%;
         margin: auto;
 
-        button {
+        .homepage_button_button {
           margin: 6rem;
         }
       }
@@ -66,7 +67,7 @@
       .homepage_button {
         width: 40%;
 
-        button {
+        .homepage_button_button {
           margin: 8rem;
         }
       }

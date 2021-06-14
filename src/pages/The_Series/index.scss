@@ -6,12 +6,15 @@
     width: 40rem;
 
     h1 {
-      font-family: "Bodoni Moda", serif;
       text-align: center;
-      font-size: 3rem;
+      font-weight: 300 !important;
+      letter-spacing: 0.8rem;
+      font-size: 2.3rem;
       line-height: 4rem;
-      letter-spacing: 0.15rem;
+
       word-spacing: 0.05rem;
+      text-align: center;
+
       margin-bottom: 5rem;
     }
     p {

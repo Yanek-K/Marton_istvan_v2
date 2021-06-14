@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -12,7 +13,9 @@ const Homepage = () => {
           of Winter 2020.
         </p>
         <div className="homepage_button">
-          <button>To Gallery</button>
+          <Link to="/gallery" className="homepage_button_button">
+            To Gallery
+          </Link>
         </div>
       </div>
     </div>

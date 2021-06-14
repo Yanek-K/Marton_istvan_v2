@@ -5,7 +5,7 @@
 
     .buttonsPrev {
       position: absolute;
-      top: 50%;
+      top: 525px;
       left: 3.6%;
       font-size: 32px;
       cursor: pointer;
@@ -14,7 +14,7 @@
     .buttonsNext {
       position: absolute;
       display: flex;
-      top: 50%;
+      top: 525px;
       left: 91%;
       font-size: 32px;
       cursor: pointer;
@@ -26,11 +26,9 @@
   .page-wrap {
     .buttonsPrev {
       left: 14.6%;
-      // top: 50%;
     }
     .buttonsNext {
       left: 83%;
-      top: 50%;
     }
   }
 }
@@ -39,11 +37,9 @@
   .page-wrap {
     .buttonsPrev {
       left: 20.6%;
-      // top: 50%;
     }
     .buttonsNext {
       left: 77%;
-      top: 50%;
     }
   }
 }
@@ -51,11 +47,9 @@
   .page-wrap {
     .buttonsPrev {
       left: 25.6%;
-      // top: 50%;
     }
     .buttonsNext {
       left: 72%;
-      top: 50%;
     }
   }
 }
@@ -64,11 +58,9 @@
   .page-wrap {
     .buttonsPrev {
       left: 28.6%;
-      // top: 50%;
     }
     .buttonsNext {
       left: 70%;
-      top: 50%;
     }
   }
 }
@@ -77,11 +69,9 @@
   .page-wrap {
     .buttonsPrev {
       left: 32.6%;
-      // top: 50%;
     }
     .buttonsNext {
       left: 66%;
-      top: 50%;
     }
   }
 }
@@ -90,11 +80,9 @@
   .page-wrap {
     .buttonsPrev {
       left: 33.6%;
-      // top: 50%;
     }
     .buttonsNext {
       left: 65%;
-      top: 50%;
     }
   }
 }

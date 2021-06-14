@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./default.scss";
 
 //Components
@@ -22,16 +22,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route path="/" exact component={Homepage} />
-      <Route path="/gallery" component={Gallery} />
-      <Route path="/sales" component={Sales} />
-      <Route path="/shop" component={Shop} />
-      <Route path="/the_artist" component={The_Artist} />
-      <Route path="/the_szünets" component={The_Szunets} />
-      <Route path="/the_series" component={The_Series} />
-      {/* <Route path="/image_upload" component={ImageUpload} /> */}
-      <Route path="/product_details/:productId" component={ProductDetails} />
-      <Route path="/cart" component={Cart} />
+      <Switch>
+        <Route path="/" exact component={Homepage} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/sales" component={Sales} />
+        <Route path="/shop" component={Shop} />
+        <Route path="/the_artist" component={The_Artist} />
+        <Route path="/the_szünets" component={The_Szunets} />
+        <Route path="/the_series" component={The_Series} />
+        {/* <Route path="/image_upload" component={ImageUpload} /> */}
+        <Route path="/product_details/:productId" component={ProductDetails} />
+        <Route path="/cart" component={Cart} />
+      </Switch>
       <Footer />
     </div>
   );

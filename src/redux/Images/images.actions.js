@@ -34,7 +34,10 @@ export const fetchImages = () => (dispatch) => {
 };
 
 export const fetchDetails = (productId) => async (dispatch) => {
-  dispatch({ type: FETCH_DETAILS_REQUEST, payload: productId });
+  dispatch({
+    type: FETCH_DETAILS_REQUEST,
+    payload: productId,
+  });
   firestore
     .collection("gallery")
     .doc(productId)

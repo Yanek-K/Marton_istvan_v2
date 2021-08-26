@@ -32,14 +32,19 @@ const Header = () => {
                 Gallery
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/sales" className="nav">
                 Sales
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/shop" className="nav">
                 Shop
+              </Link>
+            </li> */}
+            <li>
+              <Link to="/the_szünets" className="nav">
+                The Szünets
               </Link>
             </li>
             <li>
@@ -47,21 +52,17 @@ const Header = () => {
                 The Artist
               </Link>
             </li>
-            <li>
-              <Link to="/the_szünets" className="nav">
-                The Szünets
-              </Link>
-            </li>
+
             <li>
               <Link to="/the_series" className="nav">
                 The Series
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/cart" className="nav" id="cart">
                 Cart ({totalNumCartItems})
-              </Link>
-            </li>
+              </Link> */}
+            {/* </li> */}
           </ul>
         </nav>
       </div>

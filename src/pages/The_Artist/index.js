@@ -46,7 +46,6 @@ const The_Artist = () => {
             The purpose of Márton István’s art is to bring light into the
             darkness of men’s souls. ​
           </p>
-          <h2>Page Still Under Construction</h2>
         </div>
       </div>
     </div>

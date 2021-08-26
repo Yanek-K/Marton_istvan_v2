@@ -17,7 +17,7 @@ const Shop = () => {
   useEffect(() => {
     dispatch(fetchImages());
   }, [dispatchEvent]);
-
+  console.log(images);
   return (
     <div className="shop_wrap">
       {images.length === 0 ? (
@@ -32,14 +32,18 @@ const Shop = () => {
         <ul>
           {images.map((image) => (
             <li>
-              <Link to={`/product_details/${image.imageName}`}>
+              <Link
+                to={`/product_details/${encodeURIComponent(image.imageName)}`}
+              >
                 <img
                   src={image.imageUrl}
                   alt="Series Images"
                   className="shop_img"
                 />
               </Link>
-              <Link to={`/product_details/${image.imageName}`}>
+              <Link
+                to={`/product_details/${encodeURIComponent(image.imageName)}`}
+              >
                 <p className="shop_name">{image.imageName} </p>
               </Link>
               <p className="shop_price">C${image.imagePrice}</p>

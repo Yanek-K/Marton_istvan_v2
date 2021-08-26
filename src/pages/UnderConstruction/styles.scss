@@ -1,0 +1,12 @@
+.underConstruction {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  p {
+    margin: 0 auto;
+    line-height: 3rem;
+  }
+}

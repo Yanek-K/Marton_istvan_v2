@@ -7,7 +7,7 @@ const Sales = () => {
       <div className="sales_wrap">
         <p>
           A limited edition of 100 Giclée reproductions will be offered for sale
-          shortly. A total of 5 of the 100 of each photograph is reserved to
+          in 2020. A total of 5 of the 100 of each photograph is reserved to
           ensure 5 editions of the series can be acquired in toto.
           <br />
           <br /> ​ The reproductions are produced from the sole silver gelatin

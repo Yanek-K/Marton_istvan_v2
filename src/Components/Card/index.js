@@ -22,11 +22,13 @@ const styles = {
   },
 
   image: {
-    width: "100%",
-    height: "100%",
+    width: "90%",
+    height: "90%",
+    margin: "0 auto",
   },
   name: {
-    marginTop: "2.3rem",
+    width: "90%",
+    marginTop: "-2.8rem",
     textAlign: "center",
     fontSize: "2.1rem",
   },

@@ -25,14 +25,20 @@
     }
   }
 
+  ul:after {
+    content: "";
+    flex: auto;
+  }
+
   .shop_img {
     width: 130px;
     height: auto;
-    image-rendering: -moz-crisp-edges; /* Firefox */
-    image-rendering: -o-crisp-edges; /* Opera */
-    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+    // image-rendering: crisp-edges;
+    // image-rendering: -moz-crisp-edges; /* Firefox */
+    // image-rendering: -o-crisp-edges; /* Opera */
+    // image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+
+    // -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   }
 
   .shop_name {

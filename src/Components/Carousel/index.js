@@ -98,7 +98,12 @@ class Carousel extends Component {
             style={styles.card_container}
           >
             {this.props.ImageData.map((image, index) => (
-              <Card img={image.imageUrl} name={image.imageName} key={index} />
+              <Card
+                img={image.imageUrl}
+                name={image.imageName}
+                key={index}
+                className="card-image"
+              />
             ))}
           </div>
         </div>
@@ -118,7 +123,7 @@ const styles = {
   carousel_wrap: {
     position: "absolute",
     // top: "50%",
-    left: "50%",
+    left: "51%",
     width: "555px",
     height: "680px",
     transform: "translate(-50%)",

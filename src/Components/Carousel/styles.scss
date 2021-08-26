@@ -1,12 +1,12 @@
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 500px) {
   .page-wrap {
     width: 7px;
     display: flex;
 
     .buttonsPrev {
       position: absolute;
-      top: 525px;
-      left: 3.6%;
+      top: 480px;
+      left: 1.6%;
       font-size: 32px;
       cursor: pointer;
     }
@@ -14,8 +14,8 @@
     .buttonsNext {
       position: absolute;
       display: flex;
-      top: 525px;
-      left: 91%;
+      top: 480px;
+      left: 88%;
       font-size: 32px;
       cursor: pointer;
     }
@@ -25,10 +25,10 @@
 @media only screen and (min-width: 700px) {
   .page-wrap {
     .buttonsPrev {
-      left: 14.6%;
+      left: 17.6%;
     }
     .buttonsNext {
-      left: 83%;
+      left: 76%;
     }
   }
 }
@@ -36,20 +36,21 @@
 @media only screen and (min-width: 950px) {
   .page-wrap {
     .buttonsPrev {
-      left: 20.6%;
+      left: 24.6%;
     }
     .buttonsNext {
-      left: 77%;
+      left: 71%;
     }
   }
 }
 @media only screen and (min-width: 1200px) {
   .page-wrap {
+    height: 100vh;
     .buttonsPrev {
-      left: 25.6%;
+      left: 29.6%;
     }
     .buttonsNext {
-      left: 72%;
+      left: 67.5%;
     }
   }
 }
@@ -57,10 +58,10 @@
 @media only screen and (min-width: 1400px) {
   .page-wrap {
     .buttonsPrev {
-      left: 28.6%;
+      left: 30.6%;
     }
     .buttonsNext {
-      left: 70%;
+      left: 66.5%;
     }
   }
 }

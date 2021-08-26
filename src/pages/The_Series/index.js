@@ -5,7 +5,7 @@ const The_Series = () => {
   return (
     <div className="the_series">
       <div className="the_series_wrap">
-        <h1>Artist Statement</h1>
+        <h1>Artist's Statement</h1>
         <p>
           I have created a visual symphony in C Major using light and shadow,
           timing and movement, and the classical rules of composition as a

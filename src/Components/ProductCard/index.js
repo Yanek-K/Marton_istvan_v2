@@ -25,13 +25,13 @@ const ProductCard = () => {
   // Get the single image from state and scroll to top
   useEffect(() => {
     window.scrollTo(0, 0);
-    dispatch(fetchDetails(productId));
+    dispatch(fetchDetails(decodeURIComponent(productId)));
 
     return () => {
       dispatch(fetchDetails());
     };
   }, [dispatch, productId]);
-
+  console.log(product);
   return (
     <div className="product">
       {product ? (

@@ -20,7 +20,7 @@ import LegalNotice from "./pages/LegalNotice";
 // import Cart from "./pages/Cart";
 // import UnderConstruction from "./pages/UnderConstruction";
 // import Sales from "./pages/Sales";
-// import ImageUpload from "./pages/ImageUpload";
+import ImageUpload from "./pages/ImageUpload";
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
         {/* PAGES NOT IN USE */}
         {/* <Route path="/cart" component={Cart} /> */}
         {/* <UnderConstruction /> */}
-        {/* <Route path="/image_upload" component={ImageUpload} /> */}
+        <Route path="/image_upload" component={ImageUpload} />
         {/* <Route path="/sales" component={Sales} /> */}
       </Switch>
       <Footer />

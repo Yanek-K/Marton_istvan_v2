@@ -2,15 +2,16 @@ import React from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
 
-import { selectCartItemsCount } from "./../../redux/Cart/cart.selectors";
-import { useSelector, useDispatch } from "react-redux";
+// State not in use without cart
 
-const mapState = (state) => ({
-  totalNumCartItems: selectCartItemsCount(state),
-});
+// import { selectCartItemsCount } from "./../../redux/Cart/cart.selectors";
+// import { useSelector } from "react-redux";
+// const mapState = (state) => ({
+//   totalNumCartItems: selectCartItemsCount(state),
+// });
 
 const Header = () => {
-  const { totalNumCartItems } = useSelector(mapState);
+  // const { totalNumCartItems } = useSelector(mapState);
 
   return (
     <header className="header">
@@ -23,7 +24,7 @@ const Header = () => {
         <nav className="header_nav">
           <ul>
             <li>
-              <Link to="/" exact className="nav">
+              <Link to="/" exact="true" className="nav">
                 Home
               </Link>
             </li>
@@ -37,11 +38,11 @@ const Header = () => {
                 Sales
               </Link>
             </li> */}
-            {/* <li>
-              <Link to="/shop" className="nav">
-                Shop
+            <li>
+              <Link to="/the_series" className="nav">
+                The Series
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link to="/the_szünets" className="nav">
                 The Szünets
@@ -54,8 +55,13 @@ const Header = () => {
             </li>
 
             <li>
-              <Link to="/the_series" className="nav">
-                The Series
+              <Link to="/the_artist's_statment" className="nav">
+                The Artist's Statement
+              </Link>
+            </li>
+            <li>
+              <Link to="/legal_notice" className="nav">
+                Legal Notice
               </Link>
             </li>
             {/* <li>

@@ -1,0 +1,46 @@
+.legal_notice {
+  height: auto;
+  font-family: "Lato", serif;
+
+  .legal_notice_wrap {
+    margin: 8rem auto 6rem;
+    width: 40rem;
+
+    h1 {
+      text-align: center;
+      font-weight: 300 !important;
+      letter-spacing: 0.3rem;
+      font-size: 2.3rem;
+      line-height: 4rem;
+      word-spacing: 0.05rem;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      letter-spacing: 0.15rem;
+      word-spacing: 0.05rem;
+      float: none;
+      margin-bottom: 10rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .legal_notice {
+    .legal_notice_wrap {
+      width: 60rem;
+      margin: 10rem auto 6rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .legal_notice {
+    .legal_notice_wrap {
+      width: 90rem;
+    }
+  }
+}

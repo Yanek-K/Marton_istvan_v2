@@ -12,6 +12,9 @@ const Homepage = () => {
           beginning on the first day of Spring 2019, and ending on the last day
           of Winter 2020.
         </p>
+        <p>
+          The series was photographed using 35mm Kodak black and white film.
+        </p>
         <div className="homepage_button">
           <Link to="/gallery" className="homepage_button_button">
             To Gallery

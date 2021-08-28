@@ -1,11 +1,19 @@
 .gallery-wrap {
   width: 100%;
-  min-height: 750px;
-  margin: 2rem auto;
+  min-height: 250px;
+  margin: 2rem auto 5rem;
+}
+
+@media (min-height: 700px) {
+  .gallery-wrap {
+    min-height: 250px;
+    margin-bottom: -7rem;
+  }
 }
 
 @media (min-height: 800px) {
   .gallery-wrap {
-    min-height: 550px;
+    min-height: 250px;
+    margin-bottom: -24rem;
   }
 }

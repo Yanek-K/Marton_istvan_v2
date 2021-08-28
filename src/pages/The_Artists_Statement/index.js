@@ -31,7 +31,6 @@ const The_Artists_Statment = () => {
           <br /> ​ I would like to extend my gratitude to the good people of
           Toronto who formed the orchestra in this visual symphony. ​
         </p>
-        <h3> Márton István ​</h3>
       </div>
     </div>
   );

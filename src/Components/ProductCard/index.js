@@ -56,8 +56,8 @@ const ProductCard = () => {
             <div className="product_details_text">
               <h4>Description:</h4>
               <p>
-                Image size: 108 x 162mm floating on 8.5 x 11" Hahnemühle cotton
-                paper.
+                Image size: {product.imageSize}mm floating on 8.5 x 11"
+                Hahnemühle cotton paper.
               </p>
               {/* <hr />
               <h4>Please Note:</h4>

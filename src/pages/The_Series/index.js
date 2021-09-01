@@ -13,7 +13,7 @@ const mapState = ({ imagesData }) => ({
 const The_Series = () => {
   const dispatch = useDispatch();
   const { images } = useSelector(mapState);
-
+  console.log(images);
   useEffect(() => {
     dispatch(fetchImages());
   }, [dispatchEvent]);

@@ -42,9 +42,11 @@ const The_Artist = () => {
             retoucher.
             <br />
             <br />
-            “Once upon a time in Toronto” is the artist’s first of five series.
             The purpose of Márton István’s art is to bring light into the
             darkness of men’s souls. ​
+            <br />
+            <br />
+            To contact Márton István, email martonistvanfineart@gmail.com
           </p>
         </div>
       </div>

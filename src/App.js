@@ -42,7 +42,7 @@ function App() {
         {/* PAGES NOT IN USE */}
         {/* <Route path="/cart" component={Cart} /> */}
         {/* <UnderConstruction /> */}
-        <Route path="/image_upload" component={ImageUpload} />
+        {/* <Route path="/image_upload" component={ImageUpload} /> */}
         {/* <Route path="/sales" component={Sales} /> */}
       </Switch>
       <Footer />

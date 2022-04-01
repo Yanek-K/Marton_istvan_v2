@@ -1,9 +1,13 @@
 import React from "react";
 import "./styles.scss";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ open }) => {
+  let burgerClasses = "burgerMenu";
+  if (open) {
+    burgerClasses = "burgerMenu open";
+  }
   return (
-    <div className="burgerMenu">
+    <div className={burgerClasses}>
       <a href="/">Home</a>
       <a href="/">Gallery</a>
       <a href="/">The Series</a>

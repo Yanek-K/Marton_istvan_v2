@@ -23,20 +23,22 @@ import LegalNotice from "./pages/LegalNotice";
 import ImageUpload from "./pages/ImageUpload";
 import Burger from "./components/Burger";
 import BurgerMenu from "./components/BurgerMenu";
+import Backdrop from "./components/Backdrop";
 
 function App() {
   const [open, setOpen] = useState(false);
-  let burger;
+  let backdrop;
   let burgerMenu;
 
   if (open) {
-    burgerMenu = <BurgerMenu />;
+    backdrop = <Backdrop setOpen={setOpen} />;
   }
   return (
     <div className="App">
       <Header />
       <Burger open={open} setOpen={setOpen} />
-      {burgerMenu}
+      <BurgerMenu open={open} />
+      {backdrop}
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/gallery" component={Gallery} />

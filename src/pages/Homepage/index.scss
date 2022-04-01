@@ -1,10 +1,10 @@
 .homepage {
-  height: 75vh;
+  height: auto;
 
   .homepage_wrap {
     text-align: center;
     margin: 3.5rem auto 7rem;
-    width: 40rem;
+    width: 70%;
     p {
       font-size: 2rem;
       // font-family: "Bodoni Moda", serif;
@@ -19,7 +19,7 @@
     }
 
     .the_series_button {
-      width: 70%;
+      width: 90%;
       margin: auto;
 
       .the_series_button_button {
@@ -40,6 +40,23 @@
         border: 1px solid #605e5e;
         transition: all 0.5s ease;
       }
+    }
+  }
+}
+@media only screen and (min-width: 390px) {
+  .homepage {
+    .homepage_wrap {
+      .the_series_button {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .homepage {
+    .homepage_wrap {
+      width: 40rem;
     }
   }
 }

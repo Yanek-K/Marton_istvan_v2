@@ -24,7 +24,7 @@
     }
     .the_szunets_info {
       width: 85%;
-      margin-top: 4rem;
+      margin-top: 2rem;
       margin-bottom: 4rem;
       text-align: justify;
       p {
@@ -38,6 +38,12 @@
 }
 
 @media only screen and (min-width: 480px) {
+  .the_szunets {
+    .the_szunets_wrap {
+      .the_szunets_info {
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -51,6 +57,7 @@
 
       .the_szunets_info {
         width: 60rem;
+        margin-top: 4rem;
       }
     }
   }

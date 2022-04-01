@@ -61,3 +61,17 @@
     }
   }
 }
+
+@media screen and (max-width: 580px) {
+  .header {
+    .logo {
+      margin-top: 0rem;
+      padding-top: 0rem;
+    }
+    .header_nav {
+      ul {
+        display: none;
+      }
+    }
+  }
+}

@@ -21,11 +21,15 @@ import LegalNotice from "./pages/LegalNotice";
 // import UnderConstruction from "./pages/UnderConstruction";
 // import Sales from "./pages/Sales";
 import ImageUpload from "./pages/ImageUpload";
+import Burger from "./components/Burger";
+import BurgerMenu from "./components/BurgerMenu";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Burger />
+      <BurgerMenu />
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/gallery" component={Gallery} />

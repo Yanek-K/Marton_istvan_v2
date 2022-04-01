@@ -3,8 +3,8 @@
   font-family: "Lato", serif;
 
   .the_artist_wrap {
-    margin: 8rem auto 6rem;
-    width: 40rem;
+    margin: 4rem auto 6rem;
+    width: 80%;
 
     h1 {
       // font-family: "Bodoni Moda", serif;
@@ -15,16 +15,16 @@
       line-height: 4rem;
 
       word-spacing: 0.05rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
 
     .about {
       .portrait {
+        display: block;
         width: 170px;
         // height: 19%;
-        float: right;
-        margin-left: 5rem;
-        margin-bottom: 2rem;
+        // float: right;
+        margin: 0 auto 3rem;
         image-rendering: smooth;
       }
       p {
@@ -50,11 +50,44 @@
   }
 }
 
+@media only screen and (min-width: 500px) {
+  .the_artist {
+    .the_artist_wrap {
+      h1 {
+        margin-bottom: 4rem;
+      }
+      .about {
+        .portrait {
+          float: right;
+          margin-left: 2rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          text-align: justify;
+          font-size: 1.5rem;
+          line-height: 3rem;
+          letter-spacing: 0.15rem;
+          word-spacing: 0.05rem;
+          float: none;
+          margin-bottom: 10rem;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 700px) {
   .the_artist {
     .the_artist_wrap {
       width: 60rem;
-      margin: 10rem auto 6rem;
+      margin: 6rem auto 6rem;
+
+      .about {
+        .portrait {
+          margin-left: 3rem;
+          margin-bottom: 2rem;
+        }
+      }
     }
   }
 }
@@ -63,10 +96,12 @@
   .the_artist {
     .the_artist_wrap {
       width: 90rem;
+      margin: 10rem auto 6rem;
 
       .about {
         .portrait {
           margin-bottom: 2rem;
+          margin-left: 5rem;
         }
       }
     }

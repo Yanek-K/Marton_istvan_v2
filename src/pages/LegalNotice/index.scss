@@ -1,10 +1,10 @@
 .legal_notice {
-  height: 60vh;
+  height: auto;
   font-family: "Lato", serif;
 
   .legal_notice_wrap {
-    margin: 8rem auto 6rem;
-    width: 40rem;
+    margin: 4rem auto 6rem;
+    width: 80%;
 
     h1 {
       text-align: center;
@@ -13,7 +13,7 @@
       font-size: 2.3rem;
       line-height: 4rem;
       word-spacing: 0.05rem;
-      margin-bottom: 10rem;
+      margin-bottom: 3rem;
     }
 
     p {
@@ -28,11 +28,20 @@
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .legal_notice {
+    height: 65vh;
+  }
+}
 @media only screen and (min-width: 700px) {
   .legal_notice {
     .legal_notice_wrap {
       width: 60rem;
       margin: 10rem auto 6rem;
+
+      h1 {
+        margin-bottom: 10rem;
+      }
     }
   }
 }

@@ -59,9 +59,9 @@ const ProductCard = () => {
                 Image size: {product.imageSize}mm floating on 8.5 x 11"
                 Hahnemühle cotton paper.
               </p>
-              {/* <hr />
+              <hr />
               <h4>Please Note:</h4>
-              <p>The gray mat shown is for illustration purposes only.</p> */}
+              <p>The gray mat shown is for illustration purposes only.</p>
             </div>
           </div>
         </div>

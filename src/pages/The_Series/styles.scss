@@ -1,7 +1,7 @@
 .shop_wrap {
   display: flex;
   max-width: 1000px;
-  margin: 6rem auto;
+  margin: 2rem auto;
 
   .loading_spinner {
     height: 400px;
@@ -33,7 +33,7 @@
   }
 
   .shop_img {
-    width: 130px;
+    width: 220px;
     height: auto;
     // image-rendering: crisp-edges;
     // image-rendering: -moz-crisp-edges; /* Firefox */
@@ -44,7 +44,7 @@
   }
 
   .shop_name {
-    width: 160px;
+    width: 250px;
     font-size: 1.5rem;
     overflow-wrap: break-word;
     line-height: 1.8rem;
@@ -52,6 +52,18 @@
   }
   .shop_price {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 385px) {
+  .shop_wrap {
+    margin: 6rem auto;
+    .shop_img {
+      width: 130px;
+    }
+    .shop_name {
+      width: 160px;
+    }
   }
 }
 

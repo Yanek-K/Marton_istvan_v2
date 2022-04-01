@@ -1,33 +1,18 @@
 .gallery-wrap {
   display: flex;
   width: 100%;
-  min-height: 600px;
+  min-height: 700px;
   margin: 2rem auto 5rem;
-}
-
-@media (max-height: 500px) {
-  .gallery-wrap {
-    margin-bottom: 15rem;
-  }
 }
 
 @media (max-height: 700px) {
   .gallery-wrap {
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
   }
 }
 
-@media (min-height: 700px) {
+@media (min-height: 1000px) {
   .gallery-wrap {
-    min-height: 750px;
-    margin-bottom: -5rem;
+    margin-top: 5rem;
   }
 }
-
-@media (min-height: 800px) {
-  .gallery-wrap {
-    min-height: 950px;
-    margin-bottom: -24rem;
-  }
-}
-// note

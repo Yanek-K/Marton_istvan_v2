@@ -46,7 +46,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .page-wrap {
-    height: 100vh;
+    height: 78.5vh;
     .buttonsPrev {
       left: 29.6%;
     }
@@ -82,6 +82,40 @@
   .page-wrap {
     .buttonsPrev {
       left: 33.6%;
+    }
+    .buttonsNext {
+      left: 65%;
+    }
+  }
+}
+
+@media only screen and (min-height: 1100px) {
+  .page-wrap {
+    margin-top: 10rem;
+    .buttonsPrev {
+      margin-top: 10rem;
+    }
+    .buttonsNext {
+      margin-top: 10rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 34.9%;
+    }
+    .buttonsNext {
+      left: 65%;
+    }
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .page-wrap {
+    .buttonsPrev {
+      left: 35.4%;
     }
     .buttonsNext {
       left: 65%;

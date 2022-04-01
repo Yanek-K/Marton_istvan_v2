@@ -89,3 +89,14 @@
     }
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .header {
+    .header_nav {
+      ul {
+        justify-content: space-evenly;
+        padding: 0 25rem;
+      }
+    }
+  }
+}

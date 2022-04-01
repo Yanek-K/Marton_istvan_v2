@@ -107,3 +107,15 @@
     }
   }
 }
+
+@media only screen and (min-height: 1200px) {
+  .the_artist {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-height: 1400px) {
+  .the_artist {
+    height: 77vh;
+  }
+}

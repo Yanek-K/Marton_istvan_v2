@@ -57,13 +57,18 @@
 
 @media only screen and (min-width: 385px) {
   .shop_wrap {
-    margin: 6rem auto;
     .shop_img {
       width: 130px;
     }
     .shop_name {
       width: 160px;
     }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .shop_wrap {
+    margin: 6rem auto;
   }
 }
 

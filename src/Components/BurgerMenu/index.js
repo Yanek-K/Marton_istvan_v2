@@ -1,14 +1,9 @@
 import React from "react";
 import "./styles.scss";
 
-function BurgerMenu() {
+const BurgerMenu = () => {
   return (
     <div className="burgerMenu">
-      <div className="logo">
-        <h1>Márton István</h1>
-        <h3>FINE ART - TORONTO</h3>
-      </div>
-
       <a href="/">Home</a>
       <a href="/">Gallery</a>
       <a href="/">The Series</a>
@@ -18,6 +13,6 @@ function BurgerMenu() {
       <a href="/">Legal Notice</a>
     </div>
   );
-}
+};
 
 export default BurgerMenu;

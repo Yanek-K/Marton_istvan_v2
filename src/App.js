@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./default.scss";
 
@@ -25,11 +25,18 @@ import Burger from "./components/Burger";
 import BurgerMenu from "./components/BurgerMenu";
 
 function App() {
+  const [open, setOpen] = useState(false);
+  let burger;
+  let burgerMenu;
+
+  if (open) {
+    burgerMenu = <BurgerMenu />;
+  }
   return (
     <div className="App">
       <Header />
-      <Burger />
-      <BurgerMenu />
+      <Burger open={open} setOpen={setOpen} />
+      {burgerMenu}
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/gallery" component={Gallery} />

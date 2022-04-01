@@ -46,3 +46,21 @@
     }
   }
 }
+
+@media only screen and (min-height: 1000px) {
+  .the_series {
+    height: 71vh;
+  }
+}
+
+@media only screen and (min-height: 1200px) {
+  .the_series {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-height: 1400px) {
+  .the_series {
+    height: 77vh;
+  }
+}

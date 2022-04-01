@@ -114,3 +114,20 @@
     }
   }
 }
+
+@media only screen and (min-height: 900px) {
+  .homepage {
+    .homepage_wrap {
+      margin-top: 16rem;
+      p {
+        margin-bottom: 9rem;
+      }
+      .homepage_button {
+        width: 60%;
+        .homepage_button_button {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}

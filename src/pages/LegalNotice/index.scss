@@ -53,3 +53,21 @@
     }
   }
 }
+
+@media only screen and (min-height: 1000px) {
+  .legal_notice {
+    height: 71vh;
+  }
+}
+
+@media only screen and (min-height: 1200px) {
+  .legal_notice {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-height: 1400px) {
+  .legal_notice {
+    height: 77vh;
+  }
+}

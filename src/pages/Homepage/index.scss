@@ -63,7 +63,7 @@
 
 @media only screen and (min-width: 700px) {
   .homepage {
-    height: 65vh;
+    height: 60vh;
     .homepage_wrap {
       width: 60rem;
       margin: 10rem auto 8rem;
@@ -117,6 +117,7 @@
 
 @media only screen and (min-height: 900px) {
   .homepage {
+    height: 62vh;
     .homepage_wrap {
       margin-top: 16rem;
       p {
@@ -129,5 +130,16 @@
         }
       }
     }
+  }
+}
+@media only screen and (min-height: 1075px) {
+  .homepage {
+    height: 67.5vh;
+  }
+}
+
+@media only screen and (min-height: 1250px) {
+  .homepage {
+    //height: 73vh;
   }
 }

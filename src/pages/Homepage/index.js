@@ -20,6 +20,11 @@ const Homepage = () => {
             To Gallery
           </Link>
         </div>
+        <div className="the_series_button">
+          <Link to="/the_series" className="the_series_button_button">
+            The Series
+          </Link>
+        </div>
       </div>
     </div>
   );

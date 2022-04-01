@@ -1,9 +1,9 @@
 .homepage {
-  height: 65vh;
+  height: 75vh;
 
   .homepage_wrap {
     text-align: center;
-    margin: 7rem auto;
+    margin: 3.5rem auto 7rem;
     width: 40rem;
     p {
       font-size: 2rem;
@@ -15,13 +15,17 @@
     }
 
     .homepage_button {
-      width: 60%;
+      display: none;
+    }
+
+    .the_series_button {
+      width: 70%;
       margin: auto;
 
-      .homepage_button_button {
+      .the_series_button_button {
         background-color: black;
         color: white;
-        margin: 4rem;
+        margin: 2rem;
         padding: 1rem 3rem;
         border: 1px solid white;
         font-size: 1.45rem;
@@ -31,7 +35,7 @@
         word-spacing: 0.1rem;
       }
 
-      .homepage_button_button:hover {
+      .the_series_button_button:hover {
         background-color: #605e5e;
         border: 1px solid #605e5e;
         transition: all 0.5s ease;
@@ -42,17 +46,37 @@
 
 @media only screen and (min-width: 700px) {
   .homepage {
+    height: 65vh;
     .homepage_wrap {
       width: 60rem;
       margin: 10rem auto 8rem;
 
       .homepage_button {
+        display: inline;
         width: 60%;
         margin: auto;
 
         .homepage_button_button {
+          background-color: black;
+          color: white;
           margin: 6rem;
+          padding: 1rem 3rem;
+          border: 1px solid white;
+          font-size: 1.45rem;
+          // font-family: "Bodoni Moda", serif;
+          line-height: 4rem;
+          letter-spacing: 0.2rem;
+          word-spacing: 0.1rem;
         }
+
+        .homepage_button_button:hover {
+          background-color: #605e5e;
+          border: 1px solid #605e5e;
+          transition: all 0.5s ease;
+        }
+      }
+      .the_series_button {
+        display: none;
       }
     }
   }

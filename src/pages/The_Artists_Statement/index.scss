@@ -2,8 +2,8 @@
   height: auto;
 
   .the_series_wrap {
-    margin: 8rem auto 6rem;
-    width: 40rem;
+    margin: 4rem auto 6rem;
+    width: 80%;
 
     h1 {
       text-align: center;
@@ -13,7 +13,7 @@
       line-height: 4rem;
       word-spacing: 0.05rem;
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
     p {
       text-align: justify;
@@ -32,6 +32,9 @@
     .the_series_wrap {
       width: 60rem;
       margin: 10rem auto 6rem;
+      h1 {
+        margin-bottom: 4rem;
+      }
     }
   }
 }
